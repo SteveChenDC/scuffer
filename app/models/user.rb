@@ -4,7 +4,10 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  validates_presence_of :time_zone, if: :current_user
+  # Receiving current_user error below when trying to Sign Up or User.create a new user.
+  # validates_presence_of :time_zone, if: :current_user
+
+  has_many :connections, dependent: :destroy
 
   private
 

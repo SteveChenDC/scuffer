@@ -27,6 +27,7 @@ gem 'font-awesome-rails'
 gem 'simple_form'
 gem 'devise'
 gem 'dotenv-rails'
+gem 'omniauth-twitter'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
